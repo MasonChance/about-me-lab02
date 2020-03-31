@@ -4,7 +4,7 @@
 
     <title>day01-201-lab01b</title>
     <meta charset="utf-8">
-
+    <link rel="stylesheet" href="style.css">
   </head>
 
 <body>
@@ -27,48 +27,48 @@
     <h2>Game "Score"</h2>         
 
 
-      <p style= "border-color: hsla(197, 100%, 59%, .82); color: khaki; background-color:hsla(122, 87%, 62%, 0.78);">First yes/no question</p>
+      <p class="question">First yes/no question</p>
       
-      <p>Answer 1</p>
+      <p class="answer">Answer 1</p>
 
-      <p style="border-color: lavenderblush; color: lightsteelblue; background-color: darkgrey; ">Question 2 </p>
+      <p class="question">Question 2 </p>
       
-      <p> answer 2</p>
+      <p class="answer"> answer 2</p>
 
-      <p style="border-color: lightsteelblue; color:hsla(44, 100%, 40%, 1.0)">Question 3</p>
+      <p class="question">Question 3</p>
         
-      <p>Answer 3</p>
+      <p class="answer">Answer 3</p>
 
-      <p style="border-color: hsla(44, 100%, 40%, 1.0); color: hsla(197, 100%, 59%, .82);background-color: lavenderblush;">Question 4</p>
+      <p class="question">Question 4</p>
 
-      <p>Answer 4</p>
+      <p class="answer">Answer 4</p>
       
-      <p>Question 5</p>
+      <p class="question">Question 5</p>
     
-      <p>Answer 5 </p>
+      <p class="answer">Answer 5 </p>
         
         <script>
           // `prompt()` variables are immediately followed by alerts utilizing the values input by user.Both alerts and prompts are imediately followed with `console.log()`
           
-          var gameGenre = prompt(" what is your favorite game genre? ");
-          console.log(gameGenre + "gameGenre");
+          // var gameGenre = prompt(" what is your favorite game genre? ");
+          // console.log(gameGenre + "gameGenre");
 
-          alert(" Real Time Strategy is usually my favorite but " + gameGenre + " sounds fun! ");
+          // alert(" Real Time Strategy is usually my favorite but " + gameGenre + " sounds fun! ");
           
-          var favGame = prompt("what is your favorite game right now? ");
-          console.log(favGame + "favGame")
+          // var favGame = prompt("what is your favorite game right now? ");
+          // console.log(favGame + "favGame")
 
-          alert(" I should download " + favGame + "! ");
+          // alert(" I should download " + favGame + "! ");
 
-          var gameStyle = prompt("Is " + favGame + " also a " + gameGenre + "? ");
-          console.log(gameStyle + "gameStyle");
+          // var gameStyle = prompt("Is " + favGame + " also a " + gameGenre + "? ");
+          // console.log(gameStyle + "gameStyle");
           
-          alert(" Maybe someone will make " + favGame + " into an RTS someday!");
+          // alert(" Maybe someone will make " + favGame + " into an RTS someday!");
 
-          var platform = prompt(" What platform is " + favGame + " ? ");
-          console.log(platform + "platform")
+          // var platform = prompt(" What platform is " + favGame + " ? ");
+          // console.log(platform + "platform")
          
-          alert(" It would be cool if " + favGame + " was not only on " + platform + ", then we could both play " + favGame + " even if it is " + gameStyle + " " + gameGenre + "! ");
+          // alert(" It would be cool if " + favGame + " was not only on " + platform + ", then we could both play " + favGame + " even if it is " + gameStyle + " " + gameGenre + "! ");
 
           
         </script>

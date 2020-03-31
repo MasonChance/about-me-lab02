@@ -16,3 +16,12 @@ p{
 
 
 }
+.answer{
+  border-color: hsla(44, 100%, 40%, 1.0); 
+  color: hsla(197, 100%, 59%, .82);
+  background-color: lavenderblush;
+}
+.question{
+  border-color: lightsteelblue; 
+  color:hsla(44, 100%, 40%, 1.0)
+}
