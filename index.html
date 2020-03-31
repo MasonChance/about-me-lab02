@@ -1,30 +1,86 @@
 <!DOCTYPE html>
-  ><head>
-    <title>About me Lab 02</title>
-    <meta charset="utf-8">
-  </head>
-    
 <html>
->
-<header>
-  <h1>About Me</h1>
-</header>
+  <head>
 
-<main>
+    <title>day01-201-lab01b</title>
+    <meta charset="utf-8">
 
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-</main>
+    <style>
+      h1{
+        color:hsla(122, 87%, 62%, 0.78);
+        font-style:italic;
+        padding: 10px;
+        text-align: center;
+        font-size: 42px;
+      }
+      body{
+        background-color: black;
+        border-radius: 30px;
+      }
+      p{
+        border-style: groove;
+        padding: 10px;
+        border-width: 15px;
 
-<footer>
-  <nav>
-    <ul>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-    </ul>
-  </nav>
-</footer>
+      
+      }
+    </style>
+
+  </head>
+<body>
+  <header>
+
+    <!--Left empty for assignment purposes-->
+
+  </header>
+
+  <main>
+    
+    <h1>Class 1 Lab</h1>
+
+      <p style= "border-color: hsla(197, 100%, 59%, .82); color: khaki; background-color:hsla(122, 87%, 62%, 0.78);">What is your favorite game genre?</p>
+        
+
+      <p style="border-color: lavenderblush; color: lightsteelblue; background-color: darkgrey; ">What is your favorite game right now?</p>
+        
+
+      <p style="border-color: lightsteelblue; color:hsla(44, 100%, 40%, 1.0)">Is your favorite game also in your favorite genre?</p>
+        
+      
+      <p style="border-color: hsla(44, 100%, 40%, 1.0); color: hsla(197, 100%, 59%, .82);background-color: lavenderblush;">What platform is your favorite game on?</p>
+        
+        <script>
+          `prompt()` variables are immediately followed by alerts utilizing the values input by user.Both alerts and prompts are imediately followed with `console.log()`
+          
+          var gameGenre = prompt(" what is your favorite game genre? ");
+          console.log(gameGenre + "gameGenre");
+
+          alert(" Real Time Strategy is usually my favorite but " + gameGenre + " sounds fun! ");
+          
+          var favGame = prompt("what is your favorite game right now? ");
+          console.log(favGame + "favGame")
+
+          alert(" I should download " + favGame + "! ");
+
+          var gameStyle = prompt("Is " + favGame + " also a " + gameGenre + "? ");
+          console.log(gameStyle + "gameStyle");
+          
+          alert(" Maybe someone will make " + favGame + " into an RTS someday!");
+
+          var platform = prompt(" What platform is " + favGame + " ? ");
+          console.log(platform + "platform")
+         
+          alert(" It would be cool if " + favGame + " was not only on " + platform + ", then we could both play " + favGame + " even if it is " + gameStyle + " " + gameGenre + "! ");
+
+          
+        </script>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+</body>
+
 </html>
