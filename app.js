@@ -5,15 +5,23 @@
 
 // personalized greeting
 
-// var theirName = prompt("Hi, welcome to the project! What is your name?");
-//console.log(theirName : "");
-
-// var greeting = alert("We're glad to have you with us " + theirName + "! ");
-// console.log(greeting)
-
 // if else evaluating  response and triggering an alternate alert if no name is entered. "at this point in the project I am not allowed to use loops to end the prompt cycle, please enter your name"  
 // once correct answer is given, alert incorporates my bio. 
 
+// let theirName = prompt("Hi, welcome to the project! What is your name?");
+// console.log(theirName);
+
+
+
+// if(theirName === "" || theirName === null){
+//   let theirName = prompt('I\'m sorry, I din\'t catch that, please enter your name');
+//   console.log('theirName:' + theirName);
+// }else{
+//   var greeting = alert("We're glad to have you with us " + theirName + "! ");
+//   console.log(greeting);
+//   alert(greeting)
+  
+// }
 
 
 
