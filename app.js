@@ -1,25 +1,23 @@
 'use strict'
 
 
-
-
 // personalized greeting
 // if/else to account for "invalid input"
 // once correct answer is given, alert incorporates my bio. 
 
 let theirName = prompt('Hi, welcome to the project! What is your name?');
+var bio = 'Now that we are acquainted I\'ll tell you a bit about myself. I was born in Auburn Washington we moved to Iowa when I was young and I mostly grew up in Guthrie Center. Even though we didn\'t own a computer until I was almost out of the house I played Ken\'s Labrynth on my aunt\'s computer, this was before we had things like streaming or CD\'s! I started working as a cook at a restaurant when I was 16, and after moving back to Washington a few years ago I started a business with a former boss as the managing partner; This ended up being a good opportunity for self-evaluation and careful re-adjusting of my career direction. I decided to become a software developer back in mid 2018 and it took me a while to put my life in order before I enrolled at Code Fellows'
 // console.log(theirName);
 
-var bio = 'Now that we are acquainted I\'ll tell you a bit about myself. I was born in Auburn Washington we moved to Iowa when I was young and I mostly grew up in Guthrie Center. Even though we didn\'t own a computer until I was almost out of the house I played Ken\'s Labrynth on my aunt\'s computer, this was before we had things like streaming or CD\'s! I started working as a cook at a restaurant when I was 16, and after moving back to Washington a few years ago I started a business with a former boss as the managing partner; This ended up being a good opportunity for self-evaluation and careful re-adjusting of my career direction. I decided to become a software developer back in mid 2018 and it took me a while to put my life in order before I enrolled at Code Fellows'
 
 if(theirName === '' || theirName === null){
   let theirName = prompt('I\'m sorry, I din\'t catch that, please enter your name');
   // console.log('theirName:' + theirName);
 }else{
   var greeting = alert('We\'re glad to have you with us ' + theirName + '! ');
-//   console.log(greeting + "bio");
-// }
-  alert(greeting + "bio")
+  //   console.log(greeting + "bio");
+  // }
+  alert(greeting + " " + bio)
 }
 //Question 1 'Did I grow up in Auburn?'
 var homeTown = prompt('Please enter (y) for Yes or (n) No; Did I grow up in Auburn?');
