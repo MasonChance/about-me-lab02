@@ -109,8 +109,37 @@ for(i = 0; i < 3; i ++){
   
 }
 if(guess != myNumber)guess = console.log('I\'m sorry, the number was 3');
-// console.log(i);
-// console.log('I\'m sorry you have ' + (3 - i) + ' attempts remaining');
-// console.log()
+
+// Alert List 3 favorite bands [x]
+// array [band 1, band 2, band 3] [x]
+// prompt(' type your answer: which of the following is one of my favorite bands. list 8 bands);[x]
+// for loop to count the 6 attempts[x]
+// if to check agains array, break if correct, alert if not.[x]
+// 
+
+
+var favBands = [' Cradle of Filth', ' Aesthetic Perfection', ' Wardruna '];
+
+alert(favBands);
+
+var bandChoice = prompt('type your answer: which of the following is one of my favorite bands: Wardruna, Decoded Feedback, Justin Beiber, Maroon 5, Aesthetic Perfection, Combichrist, Shadows in the Dark, Cradle of Filth, And One. answers ARE CASE SENSITIVE');
+
+for(i = 0; i < 5; i ++){
+  if(bandChoice === favBands[0] || bandChoice === favBands[1] || bandChoice === favBands[2]){
+  console.log('Excellent memory! ');
+  break;
+  } else {
+    while(i < 5){
+      bandChoice = prompt('I\'m sorry, that is not correct, you have: ' + (5 - i) + ' attempts remainingtype your answer: which of the following is one of my favorite bands: Wardruna, Decoded Feedback, Justin Beiber, Maroon 5, Aesthetic Perfection, Combichrist, Shadows in the Dark, Cradle of Filth, And One. answers ARE CASE SENSITIVE');
+      break;
+    }
+  }
+}
+if(bandChoice != favBands[0] || bandChoice != favBands[1] || bandChoice != favBands[2]){
+  console.log('You\'ve run out of guesses, correct possible answers were: ' + favBands);
+}
+
+
+
 
 
