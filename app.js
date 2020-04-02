@@ -8,8 +8,6 @@ var bio = 'Now that we are acquainted I\'ll tell you a bit about myself. I was b
 
 console.log(theirName);
 
-// use loop \&&\||\ switch to to account for "invalid input" and repromt with \altmsg
-
 if(theirName){
   // alert('We\'re glad to have you with us ' + theirName + " " + bio);
 } else {
@@ -83,9 +81,6 @@ if(noobieDev === true){
   // alert('thats ok ' + theirName + ' we\'ll come back to that');
   console.log('thats ok ' + theirName + ' we\'ll come back to that');
 }
-
-// personalized farewell
-// move to bottom of JS
 
 // number guess loop 4 attempts means set the index limit @(<=3)
 // Question, how many of my quirks are related to video cinema
