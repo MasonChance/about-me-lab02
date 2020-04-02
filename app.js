@@ -23,31 +23,33 @@ var correctcount = 0;
 // Declare var for Promt
 // for question 1 whole question becomes function.
 // check for correctcounter execution after function invoke. 
+<<<<<<< HEAD
 // 
+=======
+
+>>>>>>> bd1751582e0c719f614b42d871c6507f08c0f493
 
 
 
 
-//Question 1 'Did I grow up in Auburn?'
+// Question 1 'Did I grow up in Auburn?'
 
-// function homeTown(){
-//   var homeTown = prompt('Please enter (y) for Yes or (n) No; Did I grow up in Auburn?');
-//   let reply = homeTown.toLowerCase(); // converts answer for validation and is re-assigned within each `final else`statement for the successive questions in the script. 
-//   console.log('reply:' + reply);
+function homeTown(){
+  var homeTown = prompt('Please enter (y) for Yes or (n) No; Did I grow up in Auburn?');
+  let reply = homeTown.toLowerCase(); // converts answer for validation and is re-assigned within each `final else`statement for the successive questions in the script.   
+  if(reply === 'n'){
+    // alert('Correct! I grew up in Guthrie Center!');
+    console.log('Correct! I grew up in Guthrie Center!');
+    correctcount ++;
+  } else {
+    // alert('I\m sorry,'+ theirName + ' that is not correct, we\'ll come back to that ');
+    console.log('I\m sorry, that is not correct');
+  }
+}
+
+console.log(correctcount);
   
-//   if(reply === 'n'){
-//     // alert('Correct! I grew up in Guthrie Center!');
-//     console.log('Correct! I grew up in Guthrie Center!');
-//     correctcount ++;
-//   } else {
-//     // alert('I\m sorry,'+ theirName + ' that is not correct, we\'ll come back to that ');
-//     console.log('I\m sorry, that is not correct');
-//   }
-// }
-
-// console.log(correctcount);
-  
-//Question 2 "was my first Game on a 3 1/2" floppy disc"
+// Question 2 "was my first Game on a 3 1/2" floppy disc"
 
 // function firstGame(){
 
@@ -104,85 +106,88 @@ var correctcount = 0;
 // function noobieDev(){
 //   var noobieDev = confirm('click "ok" for true and "cancel" for false; It took me a year and a half to enroll @CodeFellows after I decided to become a Software Developer.')
   
-//   if(noobieDev === true){
-//     // alert('Awesome! ' + theirName + ' As excited as I was to start my journey as a dev, I knew it was important to set myself up for success first! ');
-//     console.log('Awesome! ' + theirName + ' As excited as I was to start my journey as a dev, I knew it was important to set myself up for success first! ');
-//   } else {
-//     // alert('thats ok ' + theirName + ' we\'ll come back to that');
-//     console.log('thats ok ' + theirName + ' we\'ll come back to that');
-//   }
+  if(noobieDev === true){
+    // alert('Awesome! ' + theirName + ' As excited as I was to start my journey as a dev, I knew it was important to set myself up for success first! ');
+    console.log('Awesome! ' + theirName + ' As excited as I was to start my journey as a dev, I knew it was important to set myself up for success first! ');
+  } else {
+    // alert('thats ok ' + theirName + ' we\'ll come back to that');
+    console.log('thats ok ' + theirName + ' we\'ll come back to that');
+  }
 
-// }
+}
 
+// question 6
+// number guess loop 4 attempts means set the index limit @(<=3)
+// Question, how many of my quirks are related to video cinema
+// answer? 
 
-// // number guess loop 4 attempts means set the index limit @(<=3)
-// // Question, how many of my quirks are related to video cinema
-// // answer? 
-
-// var myNumber = '3';
-// var guess = prompt('I\'m thinking of a number between 1 and 10, can you guess it?');
-
-// // add theirName concat to console log message after debugging. 
-// for(attempts = 0; attempts < 3; attempts ++){
-//   if(guess === myNumber){
-//     // alert('Great you got it!');
-//     console.log('Great you got it!' + theirName);
-//     correctcount ++;
-//     break;
-//   } else if(guess != myNumber && attempts < 3){      
-//     if(guess === myNumber){
-//       // alert('Great you got it!');
-//       console.log('Great you got it!');
-//       correctcount ++;
-//       break;
-//     } else if(guess > myNumber){
-//       guess = prompt('I\'m sorry, you guessed too high, you have ' + (3 - attempts) + ' attempts remaining ');
-//     } else {
-//       guess = prompt(' I\'m sorry, you guessed too low, you have ' + (3 - attempts) + ' attempts remaining ')
-//     }
-    
-//   } else {
-    
-//   }
+function myNumber(){
+  var myNumber = '3';
+  var guess = prompt('I\'m thinking of a number between 1 and 10, can you guess it?');
   
-// }
-// // if(guess != myNumber)guess = alert('I\'m sorry, the number was 3');
+  // add theirName concat to console log message after debugging. 
+  for(var attempts = 0; attempts < 3; attempts ++){
+    if(guess === myNumber){
+      // alert('Great you got it!');
+      console.log('Great you got it!' + theirName);
+      correctcount ++;
+      break;
+    } else if(guess != myNumber && attempts < 3){      
+      if(guess === myNumber){
+        // alert('Great you got it!');
+        console.log('Great you got it!');
+        correctcount ++;
+        break;
+      } else if(guess > myNumber){
+        guess = prompt('I\'m sorry, you guessed too high, you have ' + (3 - attempts) + ' attempts remaining ');
+      } else {
+        guess = prompt(' I\'m sorry, you guessed too low, you have ' + (3 - attempts) + ' attempts remaining ')
+      }
+      
+    } else {
+      
+    }
+    
+  }
 
-// if(guess != myNumber)guess = console.log('I\'m sorry, the number was 3');
-
-// // Alert List 3 favorite bands [x]
-// // array [band 1, band 2, band 3] [x]
-// // prompt(' type your answer: which of the following is one of my favorite bands. list 8 bands);[x]
-// // for loop to count the 6 attempts[x]
-// // if to check agains array, break if correct, alert if not.[x]
-// // 
+  // if(guess != myNumber)guess = alert('I\'m sorry, the number was 3');
+  
+  if(guess != myNumber)guess = console.log('I\'m sorry, the number was 3');
+}
 
 
-// var favBands = ['Cradle of Filth', 'Aesthetic Perfection', 'Wardruna'];
+// question 7
+// Alert List 3 favorite bands [x]
+// array [band 1, band 2, band 3] [x]
+// prompt(' type your answer: which of the following is one of my favorite bands. list 8 bands);[x]
+// for loop to count the 6 attempts[x]
+// if to check agains array, break if correct, alert if not.[x]
+// 
 
-// alert(favBands);
 
-// var bandChoice = prompt('type your answer: which of the following is one of my favorite bands: Wardruna, Decoded Feedback, Justin Beiber, Maroon 5, Aesthetic Perfection, Combichrist, Shadows in the Dark, Cradle of Filth, And One. answers ARE CASE SENSITIVE');
+function favBands() {
+  var favBands = ['Cradle of Filth', 'Aesthetic Perfection', 'Wardruna'];
+  
+  alert(favBands);
+  
+  var bandChoice = prompt('type your answer: which of the following is one of my favorite bands: Wardruna, Decoded Feedback, Justin Beiber, Maroon 5, Aesthetic Perfection, Combichrist, Shadows in the Dark, Cradle of Filth, And One. answers ARE CASE SENSITIVE');
+  
+  for(var attempts = 0; attempts < 5; attempts ++){
+    if(bandChoice === favBands[0] || bandChoice === favBands[1] || bandChoice === favBands[2]){
+      // alert('Excellent memory! ');
+      console.log('Excellent memory! ');
+      correctcount ++;
+      break;
+    } else if(attempts < 5){
+        bandChoice = prompt('I\'m sorry, that is not correct, you have: ' + (5 - attempts) + ' attempts remainingtype your answer: which of the following is one of my favorite bands: Wardruna, Decoded Feedback, Justin Beiber, Maroon 5, Aesthetic Perfection, Combichrist, Shadows in the Dark, Cradle of Filth, And One. answers ARE CASE SENSITIVE');
+        break;
+    } else {
+        // alert('You\'ve run out of guesses, correct possible answers were: ' + favBands);  
+        console.log('You\'ve run out of guesses, correct possible answers were: ' + favBands);
+    }
+  }
 
-// for(var attempts = 0; attempts < 5; attempts ++){
-//   if(bandChoice === favBands[0] || bandChoice === favBands[1] || bandChoice === favBands[2]){
-//     // alert('Excellent memory! ');
-//     console.log('Excellent memory! ');
-//     correctcount ++;
-//     break;
-//   } else if(attempts < 5){
-//       bandChoice = prompt('I\'m sorry, that is not correct, you have: ' + (5 - attempts) + ' attempts remainingtype your answer: which of the following is one of my favorite bands: Wardruna, Decoded Feedback, Justin Beiber, Maroon 5, Aesthetic Perfection, Combichrist, Shadows in the Dark, Cradle of Filth, And One. answers ARE CASE SENSITIVE');
-//       break;
-//   } else {
-//       // alert('You\'ve run out of guesses, correct possible answers were: ' + favBands);  
-//       console.log('You\'ve run out of guesses, correct possible answers were: ' + favBands);
-//   }
-// }
-
-// console.log('Awesome! you got, ' + correctcount + ' out of ' + 7 + ' possible');
-
-// var fareWell = alert('It has been a pleasure chatting with you ' + theirName + ' thank you for helping with my project, I hope we get to work together again soon! ');
-
+}
 
 
 // //////////code above works////////////////////
@@ -201,7 +206,10 @@ var correctcount = 0;
 // // sum true returns of "stored in"-object
 // // compare to total "?'s" as an array. 
 
+<<<<<<< HEAD
 // // alert('Awesome! you got, ' + correctcount + ' out of ' + 7 + ' possible');
+=======
+>>>>>>> bd1751582e0c719f614b42d871c6507f08c0f493
 
 
 // /////// Function Invocations////////
@@ -217,5 +225,16 @@ var correctcount = 0;
 
 // noobieDev();
 
+myNumber();
+
+favBands();
 
 
+var results = alert('Awesome! you got, ' + correctcount + ' out of ' + 7 + ' possible');
+// console.log('Awesome! you got, ' + correctcount + ' out of ' + 7 + ' possible');
+
+console.log(results);
+
+var fareWell = alert('It has been a pleasure chatting with you ' + theirName + ' thank you for helping with my project, I hope we get to work together again soon! ');
+
+console.log(fareWell);
