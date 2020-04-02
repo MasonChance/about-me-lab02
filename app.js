@@ -9,12 +9,12 @@ var bio = 'Now that we are acquainted I\'ll tell you a bit about myself. I was b
 var i = 0; // allows 'i' to be referenced in a nested `while` loop that has no acess to parent declaration of 'i'. 
 
 
-// console.log(theirName);
+console.log(theirName);
 
 // use loop \&&|| switch to to account for "invalid input" and repromt with \altmsg
 
 if(theirName){
-  alert('We\'re glad to have you with us ' + theirName + " " + bio);
+  // alert('We\'re glad to have you with us ' + theirName + " " + bio);
 } else {
   theirName = prompt(' I\'m sorry, I din\'t catch that, please enter your name');
 }
@@ -24,15 +24,15 @@ var correctcount = 0;
 //Question 1 'Did I grow up in Auburn?'
 var homeTown = prompt('Please enter (y) for Yes or (n) No; Did I grow up in Auburn?');
 let reply = homeTown.toLowerCase(); // converts answer for validation and is re-assigned within each `final else`statement for the successive questions in the script. 
-// console.log('reply:' + reply);
+console.log('reply:' + reply);
 
 if(reply === 'n'){
-  alert('Correct! I grew up in Guthrie Center!');
-  // console.log('Correct! I grew up in Guthrie Center!');
+  // alert('Correct! I grew up in Guthrie Center!');
+  console.log('Correct! I grew up in Guthrie Center!');
   correctcount ++;
 } else {
-  alert('I\m sorry,'+ theirName + ' that is not correct, we\'ll come back to that ');
-  // console.log('I\m sorry, that is not correct');
+  // alert('I\m sorry,'+ theirName + ' that is not correct, we\'ll come back to that ');
+  console.log('I\m sorry, that is not correct');
 }
   
 //Question 2 "was my first Game on a 3 1/2" floppy disc"
@@ -41,12 +41,12 @@ var firstGame = prompt('Please enter (y) for Yes and (n) for No; Was my first ga
 reply = firstGame.toLowerCase();
 
 if(reply === 'y'){
-  alert('Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive');
+  // alert('Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive');
   correctcount ++;
-  // console.log('Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive');
+  console.log('Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive');
 } else {
-  alert('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
-  // console.log('thats ok ' + theirName + ' we\'ll come back to that');
+  // alert('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
+  console.log('thats ok ' + theirName + ' we\'ll come back to that');
 }
 
 // question 3 begins use of confirm commands for validation 'click "ok" for true and "cancel" for false; I\'m 32, and started my career in hospitality 16 years ago. '
@@ -54,12 +54,12 @@ if(reply === 'y'){
 var career = confirm('click "ok" for true and "cancel" for false; I\'m 32, and started my career in hospitality 16 years ago. ');
 
 if(career === true){
-  alert('Awesome! ' + theirName + ' I started in hospitality as a cook half my life ago!');
+  // alert('Awesome! ' + theirName + ' I started in hospitality as a cook half my life ago!');
   correctcount ++;
-  // console.log('Awesome! ' + theirName + ' I started in hospitality as a cook half my life ago!');
+  console.log('Awesome! ' + theirName + ' I started in hospitality as a cook half my life ago!');
 } else {
-  alert('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
-  // console.log('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
+  // alert('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
+  console.log('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
 }
 
 // Question 4 "I was super happy when my first business venture as a managing partner was a hit and we sold the company for a big profit!"
@@ -67,12 +67,12 @@ if(career === true){
 var bizSuccess = confirm('click "ok" for true and "cancel" for false; I was super happy when my first business venture as a managing partner was a hit and we sold the company for a big profit! ');
 
 if(bizSuccess === false){
-  alert('Awesome!' + theirName + 'While my first experience as an entrepreneur taught me a lot about where I need to grow, it was not a financial success');
+  // alert('Awesome!' + theirName + 'While my first experience as an entrepreneur taught me a lot about where I need to grow, it was not a financial success');
   correctcount ++;
-  // console.log('Awesome! ' + theirName + ' While my first experience as an entrepreneur taught me a lot about where I need to grow, it was not a financial success');
+  console.log('Awesome! ' + theirName + ' While my first experience as an entrepreneur taught me a lot about where I need to grow, it was not a financial success');
 } else {
-  alert('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
-  // console.log('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
+  // alert('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
+  console.log('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
 }
 
 //Question 5 'It took me a year and a half to enroll @CodeFellows after I decided to become a Software Developer.' 
@@ -80,11 +80,11 @@ if(bizSuccess === false){
 var noobieDev = confirm('click "ok" for true and "cancel" for false; It took me a year and a half to enroll @CodeFellows after I decided to become a Software Developer.')
 
 if(noobieDev === true){
-  alert('Awesome! ' + theirName + ' As excited as I was to start my journey as a dev, I knew it was important to set myself up for success first! ');
-  // console.log('Awesome! ' + theirName + ' As excited as I was to start my journey as a dev, I knew it was important to set myself up for success first! ');
+  // alert('Awesome! ' + theirName + ' As excited as I was to start my journey as a dev, I knew it was important to set myself up for success first! ');
+  console.log('Awesome! ' + theirName + ' As excited as I was to start my journey as a dev, I knew it was important to set myself up for success first! ');
 } else {
-  alert('thats ok ' + theirName + ' we\'ll come back to that');
-  // console.log('thats ok ' + theirName + ' we\'ll come back to that');
+  // alert('thats ok ' + theirName + ' we\'ll come back to that');
+  console.log('thats ok ' + theirName + ' we\'ll come back to that');
 }
 
 // personalized farewell
@@ -100,14 +100,14 @@ var guess = prompt('I\'m thinking of a number between 1 and 10, can you guess it
 // add theirName concat to console log message after debugging. 
 for(i = 0; i < 3; i ++){
   if(guess === myNumber){
-    alert('Great you got it!');
-    // console.log('Great you got it!');
+    // alert('Great you got it!');
+    console.log('Great you got it!' + theirName);
     correctcount ++;
     break;
   } else if(guess != myNumber && i < 3){      
     if(guess === myNumber){
-      alert('Great you got it!');
-      // console.log('Great you got it!');
+      // alert('Great you got it!');
+      console.log('Great you got it!');
       correctcount ++;
       break;
     } else if(guess > myNumber){
@@ -121,9 +121,9 @@ for(i = 0; i < 3; i ++){
   }
   
 }
-if(guess != myNumber)guess = alert('I\'m sorry, the number was 3');
+// if(guess != myNumber)guess = alert('I\'m sorry, the number was 3');
 
-// if(guess != myNumber)guess = console.log('I\'m sorry, the number was 3');
+if(guess != myNumber)guess = console.log('I\'m sorry, the number was 3');
 
 // Alert List 3 favorite bands [x]
 // array [band 1, band 2, band 3] [x]
@@ -141,19 +141,23 @@ var bandChoice = prompt('type your answer: which of the following is one of my f
 
 for(i = 0; i < 5; i ++){
   if(bandChoice === favBands[0] || bandChoice === favBands[1] || bandChoice === favBands[2]){
-    alert('Excellent memory! ');
-    // console.log('Excellent memory! ');
+    // alert('Excellent memory! ');
+    console.log('Excellent memory! ');
     correctcount ++;
     break;
   } else if(i < 5){
       bandChoice = prompt('I\'m sorry, that is not correct, you have: ' + (5 - i) + ' attempts remainingtype your answer: which of the following is one of my favorite bands: Wardruna, Decoded Feedback, Justin Beiber, Maroon 5, Aesthetic Perfection, Combichrist, Shadows in the Dark, Cradle of Filth, And One. answers ARE CASE SENSITIVE');
       break;
   } else {
-      alert('You\'ve run out of guesses, correct possible answers were: ' + favBands);  
+      // alert('You\'ve run out of guesses, correct possible answers were: ' + favBands);  
+      console.log('You\'ve run out of guesses, correct possible answers were: ' + favBands);
   }
 }
 
-  // console.log('You\'ve run out of guesses, correct possible answers were: ' + favBands);
+console.log('Awesome! you got, ' + correctcount + ' out of ' + 7 + ' possible');
+
+var fareWell = alert('It has been a pleasure chatting with you ' + theirName + ' thank you for helping with my project, I hope we get to work together again soon! ');
+
 
 
 //////////code above works////////////////////
@@ -172,8 +176,7 @@ for(i = 0; i < 5; i ++){
 // sum true returns of "stored in"-object
 // compare to total "?'s" as an array. 
 
-alert('Awesome! you got, ' + correctcount + ' out of ' + 7 + ' possible');
-var fareWell = alert('It has been a pleasure chatting with you ' + theirName + ' thank you for helping with my project, I hope we get to work together again soon! ');
+// alert('Awesome! you got, ' + correctcount + ' out of ' + 7 + ' possible');
 
 
 
