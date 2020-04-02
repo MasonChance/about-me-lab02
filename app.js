@@ -3,11 +3,12 @@
 // personalized greeting
 // once correct answer is given, alert incorporates my bio. 
 
-let theirName = prompt('Hi, welcome to the project! What is your name?');
+// let theirName = prompt('Hi, welcome to the project! What is your name?');
 var bio = 'Now that we are acquainted I\'ll tell you a bit about myself. I was born in Auburn Washington we moved to Iowa when I was young and I mostly grew up in Guthrie Center. Even though we didn\'t own a computer until I was almost out of the house I played Ken\'s Labrynth on my aunt\'s computer, this was before we had things like streaming or CD\'s! I started working as a cook at a restaurant when I was 16, and after moving back to Washington a few years ago I started a business with a former boss as the managing partner; This ended up being a good opportunity for self-evaluation and careful re-adjusting of my career direction. I decided to become a software developer back in mid 2018 and it took me a while to put my life in order before I enrolled at Code Fellows'
 // console.log(theirName);
 
 // use loop \&&|| switch to to account for "invalid input" and repromt with \altmsg
+
 if(theirName){
   alert('We\'re glad to have you with us ' + theirName + " " + bio);
 } else {
@@ -35,7 +36,7 @@ reply = firstGame.toLowerCase();
 if(reply === 'y'){
   alert('Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive');
   // console.log('Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive');
-}else{
+} else {
   alert('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
   // console.log('thats ok ' + theirName + ' we\'ll come back to that');
 }
@@ -47,7 +48,7 @@ var career = confirm('click "ok" for true and "cancel" for false; I\'m 32, and s
 if(career === true){
   alert('Awesome! ' + theirName + ' I started in hospitality as a cook half my life ago!');
   // console.log('Awesome! ' + theirName + ' I started in hospitality as a cook half my life ago!');
-}else{
+} else {
   alert('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
   // console.log('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
 }
@@ -79,3 +80,37 @@ if(noobieDev === true){
 // personalized farewell
 
 var fareWell = alert('It has been a pleasure chatting with you ' + theirName + ' thank you for helping with my project, I hope we get to work together again soon! ');
+
+// number guess loop 4 attempts means set the index limit @(<=3)
+// Question, how many of my quirks are related to video cinema
+// answer? 
+
+var myNumber = '3';
+var guess = prompt('I\'m thinking of a number between 1 and 10, can you guess it?');
+
+// add theirName concat to console log message after debugging. 
+for(i = 0; i < 3; i ++){
+  if(guess === myNumber){
+    console.log('Great you got it!');
+    break;
+  } else if(guess != myNumber && i < 3){      
+      if(guess === myNumber){
+        console.log('Great you got it!');
+        break;
+      } else if(guess > myNumber){
+      guess = prompt('I\'m sorry, you guessed too high, you have ' + (3 - i) + ' attempts remaining ');
+      } else {
+        guess = prompt(' I\'m sorry, you guessed too low, you have ' + (3 - i) + ' attempts remaining ')
+      }
+
+  } else {
+    
+  }
+  
+}
+if(guess != myNumber)guess = console.log('I\'m sorry, the number was 3');
+// console.log(i);
+// console.log('I\'m sorry you have ' + (3 - i) + ' attempts remaining');
+// console.log()
+
+
