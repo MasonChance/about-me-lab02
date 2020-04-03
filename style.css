@@ -46,6 +46,7 @@ ul{
   border-style: groove;
   padding: 10px;
   border-width: 15px;
+  
 }
 li{
   padding: 20px 10px;
@@ -54,4 +55,10 @@ li{
 }
 #greeting{
   font-family: fantasy;
+}
+.list{
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    
 }

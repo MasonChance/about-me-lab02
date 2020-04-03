@@ -54,12 +54,14 @@ var attemptIndex;   // // allows access within all functions. throughout.
 
 // // QUESTION TWO ////
 
+// // Experiment with .toLowerCase(). attempting to account for impossibility of applying^method to null. 
+// // other longhand option: change condition to `||` statement accounting for both cases. 
+
 // function firstGame(){
 
 //   var kLabrynth = prompt('Please enter (y) for Yes and (n) for No; Was my first game on a 3 1/2" floppy drive?');
-//   let reply = kLabrynth.toLowerCase();
   
-//   if(reply === 'y'){
+//   if(klabrynth === toLowerCase('Y')){
 //     // alert('Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive');
 //     console.log('Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive');
 //     //document.write(<p id="klabrynth">'Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive'</p>);
@@ -72,6 +74,15 @@ var attemptIndex;   // // allows access within all functions. throughout.
 //     return false;
 //   }
 // }
+
+// // QUESTION THREE ///////
+
+
+        // // 
+
+
+
+
 
 
 // welcome();
