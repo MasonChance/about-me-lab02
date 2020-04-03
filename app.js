@@ -10,6 +10,7 @@ console.log(theirName);
 
 if(theirName){
   // alert('We\'re glad to have you with us ' + theirName + " " + bio);
+  console.log('We\'re glad to have you with us ' + theirName + " " + bio);
 } else {
   theirName = prompt(' I\'m sorry, I din\'t catch that, please enter your name');
 }
