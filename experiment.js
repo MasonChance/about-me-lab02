@@ -54,9 +54,27 @@ var attemptIndex;   // // allows access within all functions. throughout.
 
 // // QUESTION TWO ////
 
+// function firstGame(){
 
+//   var kLabrynth = prompt('Please enter (y) for Yes and (n) for No; Was my first game on a 3 1/2" floppy drive?');
+//   let reply = kLabrynth.toLowerCase();
+  
+//   if(reply === 'y'){
+//     // alert('Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive');
+//     console.log('Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive');
+//     //document.write(<p id="klabrynth">'Correct! Ken\'s Labrynth was heavily pixelated and on a 3 1/2" floppy drive'</p>);
+//     //correctcount ++;
+//     return true;
+//   } else {
+//     // alert('I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that');
+//     console.log('thats ok ' + theirName + ' we\'ll come back to that');
+//     //document.write(<p id="klabrynth">'I\m sorry, that is not correct ' + theirName + ' we\'ll come back to that'</p>);
+//     return false;
+//   }
+// }
 
 
 // welcome();
 // // MAY PUT QUIZ FUNCTION HERE// CALLS BELOW ARE FOR TESTING PURPOSES. 
 // homeTown();
+// firstGame();
