@@ -4,61 +4,79 @@ h1{
   padding: 10px;
   text-align: center;
   font-size: 42px;
+
 }
 body{
   background-color: black;
   border-radius: 30px;
+
 }
 p{
   border-style: groove;
   padding: 10px;
   border-width: 15px;
 
-
 }
 .answer{
   border-color: hsla(44, 100%, 40%, 1.0); 
   color: hsla(197, 100%, 59%, .82);
   background-color: lavenderblush;
+ 
+
 }
 .question{
   border-color: lightsteelblue; 
-  color:hsla(44, 100%, 40%, 1.0)
+  color:hsla(44, 100%, 40%, 1.0);
+  
 }
 #homeTown{
   font-weight: 18px;
+
 }
 #firstGame{
   font-weight: 18px;
+
 }
 #career{
   font-weight: 18px;
+
 }
 #bizSuccess{
   font-weight: 18px;
+
 }
 #noobieDev{
   font-weight: 18px;
+
 }
 ul{
-  list-style: none;
   border-color: rgb(36, 96, 148);
   border-style: groove;
-  padding: 10px;
+  padding: 5px;
   border-width: 15px;
+  display: table;
   
 }
-li{
-  padding: 20px 10px;
+li, .question{
+  padding: 05px;
+  margin: 05px;
   color: chocolate;
-  
+  float: left;
+  width:40%;
+
+}
+li, .answer{
+  float:right;
+  width:40%;
+
 }
 #greeting{
   font-family: fantasy;
+
 }
 .list{
     border: none;
     padding: 5px;
     margin: 10px;
-    
+
 }
