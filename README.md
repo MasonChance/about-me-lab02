@@ -10,3 +10,7 @@ resources used in the creation of this site are listed here
 
 Credit to @Bryant Davis BryantDavis1986@gitHub.com for help with designing Functions that access the value of an array
 Credit to @Melissa Galush: mgalush@GitHub.com, for input on keeping code clean, and streamlining my lay-out and testing processes. 
+
+[Home](index.html)
+
+[Quiz](quiz.html)
