@@ -29,7 +29,30 @@ nav ul li{
   margin-left:auto;
   margin-right: auto;
   padding-left: 19vw;
+  font-size: 14pt;
   
+  
+}
+
+ a:link{
+  color:hsla(122, 87%, 62%, 0.78);
+  text-decoration: none;
+  
+}
+
+a:visited{
+  color:  rgb(36, 96, 148) ;
+  text-decoration: none;
+}
+
+a:hover{
+  color: chocolate;
+  text-decoration: none;
+
+}
+
+a:active{
+  color:  hsla(122, 87%, 62%, 0.78) ;
 }
 
 h1{
