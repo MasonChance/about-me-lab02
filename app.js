@@ -112,7 +112,7 @@ function noobieDev(){
 
 // question 6
 // number guess loop 4 attempts means set the index limit @(<=3)
-// Question, how many of my quirks are related to video cinema
+// Question, how many of my quirks are Movie Related
 // answer? 
 
 function myNumber(){
