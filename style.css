@@ -1,22 +1,86 @@
+
+body{
+  background-color: black;
+  border-radius: 30px;
+
+}
+
+nav{
+  width: 93.5vw;
+  border-color: rgb(36, 96, 148);
+  border-style: groove;
+  border-width: 15px;
+  padding: 5px;
+  list-style-type: none;
+  
+}
+
+nav ul{
+  width: inherit;
+  display: inline-block;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left:auto;
+  margin-right: auto;
+  padding-left: 19vw;
+  font-size: 14pt;
+  
+  
+}
+
+ a:link{
+  color:hsla(122, 87%, 62%, 0.78);
+  text-decoration: none;
+  
+}
+
+a:visited{
+  color:  rgb(36, 96, 148) ;
+  text-decoration: none;
+}
+
+a:hover{
+  color: chocolate;
+  text-decoration: none;
+
+}
+
+a:active{
+  color:  hsla(122, 87%, 62%, 0.78) ;
+}
+
 h1{
   color:hsla(122, 87%, 62%, 0.78);
   font-style:italic;
   padding: 10px;
   text-align: center;
   font-size: 42px;
-
 }
-body{
-  background-color: black;
-  border-radius: 30px;
 
-}
 p{
   border-style: groove;
   padding: 10px;
   border-width: 15px;
 
 }
+
+article{
+  text-align: left;
+  
+}
+
+article h4{
+  color: hsla(122, 87%, 62%, 0.78);
+  font-size: 18pt;
+  text-align: center;
+}
+
 .answer{
   border-color: hsla(44, 100%, 40%, 1.0); 
   color: hsla(197, 100%, 59%, .82);
@@ -24,40 +88,46 @@ p{
  
 
 }
+
 .question{
   border-color: lightsteelblue; 
   color:hsla(44, 100%, 40%, 1.0);
   
 }
+
 #homeTown{
   font-weight: 18px;
 
 }
+
 #firstGame{
   font-weight: 18px;
 
 }
+
 #career{
   font-weight: 18px;
 
 }
+
 #bizSuccess{
   font-weight: 18px;
 
 }
+
 #noobieDev{
   font-weight: 18px;
 
 }
+
 ul{
-  border-color: rgb(36, 96, 148);
-  border-style: groove;
+  list-style-type: none;
   padding: 5px;
-  border-width: 15px;
   display: table;
   
 }
-li, .question{
+
+li .question{
   padding: 05px;
   margin: 05px;
   color: chocolate;
@@ -65,7 +135,7 @@ li, .question{
   width:40%;
 
 }
-li, .answer{
+li .answer{
   float:right;
   width:40%;
 
@@ -75,6 +145,7 @@ li, .answer{
 
 }
 .list{
+    color: chocolate;
     border: none;
     padding: 5px;
     margin: 10px;
